@@ -1,0 +1,37 @@
+
+services:
+  - type: web
+    name: semantic-search-api
+    env: python
+    rootDir: apps/api
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: API_TITLE
+        value: Semantic Programming Search API
+      - key: API_VERSION
+        value: 0.1.0
+      - key: GITHUB_MODELS_ENDPOINT
+        value: https://models.inference.ai.azure.com/embeddings
+      - key: EMBEDDING_MODEL
+        value: text-embedding-3-large
+      - key: EMBEDDING_TIMEOUT_SECONDS
+        value: 45
+      - key: EMBEDDING_MAX_RETRIES
+        value: 5
+      - key: EMBEDDING_BASE_BACKOFF_SECONDS
+        value: 1.0
+      - key: FAISS_INDEX_PATH
+        value: ../../data/index/question_index.faiss
+      - key: ID_MAP_PATH
+        value: ../../data/index/id_map.npy
+      - key: LOOKUP_MAP_PATH
+        value: ../../data/index/record_lookup.json
+      - key: DEFAULT_TOP_K
+        value: 10
+      - key: CORS_ORIGINS
+        value: https://your-vercel-domain.vercel.app
+      - key: GITHUB_MODELS_API_KEY
+        sync: false
