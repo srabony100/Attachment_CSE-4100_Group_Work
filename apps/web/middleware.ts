@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-
 const userProtected = ["/search", "/history"];
 const adminProtected = ["/admin/dashboard", "/admin/files", "/admin/users", "/admin/logs"];
 
