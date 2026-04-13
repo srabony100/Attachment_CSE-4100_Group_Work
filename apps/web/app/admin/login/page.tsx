@@ -83,4 +83,5 @@ export default function AdminLoginPage() {
             <AdminLoginContent />
         </Suspense>
     );
+    
 }
