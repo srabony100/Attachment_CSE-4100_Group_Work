@@ -52,4 +52,5 @@ export default function AuthShell({ title, subtitle, children }: AuthShellProps)
             </section>
         </main>
     );
+    
 }
