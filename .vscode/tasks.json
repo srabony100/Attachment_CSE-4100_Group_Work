@@ -1,0 +1,41 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "diag-pwd",
+			"type": "shell",
+			"command": "pwd",
+			"isBackground": false
+		},
+		{
+			"label": "git-status-check",
+			"type": "shell",
+			"command": "git rev-parse --is-inside-work-tree && git status --short --branch",
+			"isBackground": false
+		},
+		{
+			"label": "gh-auth-check",
+			"type": "shell",
+			"command": "command -v gh >/dev/null 2>&1 && gh --version && gh auth status",
+			"isBackground": false
+		},
+		{
+			"label": "check-gh-presence",
+			"type": "shell",
+			"command": "if command -v gh >/dev/null 2>&1; then echo GH_FOUND; else echo GH_MISSING; fi",
+			"isBackground": false
+		},
+		{
+			"label": "check-brew-presence",
+			"type": "shell",
+			"command": "if command -v brew >/dev/null 2>&1; then echo BREW_FOUND; else echo BREW_MISSING; fi",
+			"isBackground": false
+		},
+		{
+			"label": "install-gh-cli",
+			"type": "shell",
+			"command": "brew install gh",
+			"isBackground": false
+		}
+	]
+}
