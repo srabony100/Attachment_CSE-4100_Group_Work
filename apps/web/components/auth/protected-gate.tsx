@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
-
 import { useAuth } from "@/context/auth-context";
 
 type ProtectedGateProps = {
