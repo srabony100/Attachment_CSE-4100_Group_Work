@@ -1,0 +1,22 @@
+# Node
+node_modules/
+.next/
+out/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Data artifacts
+data/index/*.faiss
+data/index/*.npy
+data/processed/*.parquet
+
+# OS
+.DS_Store
