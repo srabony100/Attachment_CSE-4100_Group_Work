@@ -15,7 +15,6 @@ type HeroSearchProps = {
     onQueryChange: (next: string) => void;
     onSubmit: () => void;
     onSuggestionSelect: (value: string) => void;
-    onActiveSuggestionChange: (index: number) => void;
 };
 
 export default function HeroSearch({
