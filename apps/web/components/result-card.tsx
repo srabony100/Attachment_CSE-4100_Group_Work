@@ -56,7 +56,7 @@ export default function ResultCard({ item, index, query = "" }: ResultCardProps)
     async function handleCopyQuestion() {
         try {
             await navigator.clipboard.writeText(item.title);
-            
+            setCopied(true);
             window.setTimeout(() => setCopied(false), 1400);
         } catch {
             setCopied(false);
