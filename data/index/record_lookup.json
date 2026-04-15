@@ -1,0 +1,89 @@
+[
+  {
+    "record_id": "react-useeffect-dev-double-run",
+    "question": "Why does useEffect run twice in development?",
+    "answer_snippet": "React Strict Mode intentionally double-invokes effects in development to catch side effects.",
+    "tags": [
+      "react",
+      "useeffect",
+      "strict-mode"
+    ]
+  },
+  {
+    "record_id": "react-debounce-search-input",
+    "question": "How can I debounce search input in React?",
+    "answer_snippet": "Use useEffect with setTimeout and clearTimeout, or use lodash debounce with useMemo.",
+    "tags": [
+      "react",
+      "debounce",
+      "frontend"
+    ]
+  },
+  {
+    "record_id": "fastapi-di-practices",
+    "question": "FastAPI dependency injection best practices",
+    "answer_snippet": "Keep dependencies small, typed, and composable via Depends for auth, DB sessions, and settings.",
+    "tags": [
+      "fastapi",
+      "python",
+      "dependency-injection"
+    ]
+  },
+  {
+    "record_id": "sqlalchemy-n-plus-one",
+    "question": "How do I avoid N+1 queries in SQLAlchemy?",
+    "answer_snippet": "Use selectinload or joinedload for eager loading and inspect generated SQL in debug logs.",
+    "tags": [
+      "sqlalchemy",
+      "python",
+      "database"
+    ]
+  },
+  {
+    "record_id": "pandas-groupby-optimize",
+    "question": "How to optimize pandas groupby performance?",
+    "answer_snippet": "Use categorical dtypes, avoid apply when possible, and aggregate with vectorized operations.",
+    "tags": [
+      "pandas",
+      "python",
+      "performance"
+    ]
+  },
+  {
+    "record_id": "js-async-vs-defer",
+    "question": "Difference between async and defer in JavaScript",
+    "answer_snippet": "Async executes as soon as downloaded; defer preserves order and runs after HTML parsing.",
+    "tags": [
+      "javascript",
+      "html",
+      "web"
+    ]
+  },
+  {
+    "record_id": "python-list-sort",
+    "question": "How to sort a list in Python",
+    "answer_snippet": "Use list.sort() in place or sorted(list_obj) to create a new sorted list.",
+    "tags": [
+      "python",
+      "sorting"
+    ]
+  },
+  {
+    "record_id": "js-array-sort",
+    "question": "How to sort a list in JavaScript",
+    "answer_snippet": "Use array.sort((a, b) => a - b) for numbers to avoid lexicographic sorting.",
+    "tags": [
+      "javascript",
+      "sorting"
+    ]
+  },
+  {
+    "record_id": "cpp-read-file",
+    "question": "How to read a file in C++",
+    "answer_snippet": "Use std::ifstream and std::getline to read file contents safely.",
+    "tags": [
+      "c++",
+      "file-io"
+    ]
+  }
+]
