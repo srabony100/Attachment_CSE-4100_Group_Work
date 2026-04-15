@@ -6,7 +6,7 @@ type RecentSearchesProps = {
 
 export default function RecentSearches({ items, onSelect, onClear }: RecentSearchesProps) {
     if (items.length === 0) {
-        
+        return null;
     }
 
     return (
