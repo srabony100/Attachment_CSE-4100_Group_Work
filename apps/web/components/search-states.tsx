@@ -1,7 +1,7 @@
 type EmptyStateProps = {
     hasSearched: boolean;
     quickSuggestions?: string[];
-    
+    onSuggestionSelect?: (value: string) => void;
 };
 
 export function EmptyState({ hasSearched, quickSuggestions = [], onSuggestionSelect }: EmptyStateProps) {
